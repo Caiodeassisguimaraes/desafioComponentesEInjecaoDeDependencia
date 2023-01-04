@@ -1,4 +1,4 @@
-package entities;
+package com.componenteseinecaodedependencia.desafio.entities;
 
 public class Order {
     private Integer code;

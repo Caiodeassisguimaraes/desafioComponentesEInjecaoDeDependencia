@@ -1,13 +1,15 @@
-package com.componenteseinecaodedependencia.desafio;
+package com.componenteseinecaodedependencia.desafio.program;
 
-import entities.Order;
+
+import com.componenteseinecaodedependencia.desafio.entities.Order;
+import com.componenteseinecaodedependencia.desafio.services.OrderService;
+import com.componenteseinecaodedependencia.desafio.services.ShippingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
-import services.OrderService;
-import services.ShippingService;
+
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -17,9 +19,10 @@ import java.util.Scanner;
 public class DesafioApplication implements CommandLineRunner {
 	@Autowired
 	private OrderService orderService;
+
 	@Autowired
 	private ShippingService shippingService;
-	
+
 	public static void main(String[] args) {
 		SpringApplication.run(DesafioApplication.class, args);
 	}
