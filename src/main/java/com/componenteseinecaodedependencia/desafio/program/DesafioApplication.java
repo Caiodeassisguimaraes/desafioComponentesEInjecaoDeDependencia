@@ -40,9 +40,10 @@ public class DesafioApplication implements CommandLineRunner {
 		Double discountPercent = sc.nextDouble();
 
 		Order order = new Order(code, basicValue, discountPercent);
+		System.out.println();
 		System.out.println("Pedido código " + order.getCode());
-		//System.out.println("Valor do frete: R$" + shippingService.shipment(order));
-		System.out.println("Valor total: R$" + orderService.total(order));
+		//System.out.println("Valor do frete: R$ " + shippingService.shipment(order));
+		System.out.println("Valor total: R$ " + orderService.total(order));
 
 		sc.close();
 	}

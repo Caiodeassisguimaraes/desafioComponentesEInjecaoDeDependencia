@@ -7,8 +7,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ShippingService {
-    @Autowired
-    private Order order;
 
     public double shipment (Order order){
         double shipment = 0.0;

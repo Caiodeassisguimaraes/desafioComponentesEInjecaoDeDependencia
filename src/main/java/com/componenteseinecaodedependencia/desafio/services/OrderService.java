@@ -9,8 +9,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class OrderService {
     @Autowired
-    private Order order;
-    @Autowired
     private ShippingService shippingService;
 
     public double total (Order order){
